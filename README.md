@@ -58,7 +58,7 @@ This project provides simple, step-by-step instructions for monitoring your syst
    `docker stop netdata`
    `docker rm netdata`
 
-   ---
+---
 
 ## Purpose of docker-compose.yml
 
@@ -69,6 +69,8 @@ This `docker-compose.yml` file is provided to simplify the deployment of Netdata
 ## Netdata Dashboard Screenshot
 
 ![Netdata Dashboard Screenshot](dashboard-screenshot.png)
+
+---
 
 ## Netdata Running Metrics screenshot
 
