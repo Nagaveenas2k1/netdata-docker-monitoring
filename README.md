@@ -4,34 +4,38 @@
 
 This project provides simple, step-by-step instructions for monitoring your system and applications using Netdata, a free, open-source tool running in a Docker container. It helps you visualize real-time CPU, memory, disk, and network usage—all from a modern web dashboard.
 
+---
+
 ## Prerequisites
 
   - Docker installed on your system (Linux, macOS, or Windows)
   - Internet connection (for downloading the Netdata image)
 
+---
+
 ## Quick Start
 
-### 1. Run Netdata in Docker
+1. Run Netdata in Docker
 
-    Open a terminal and start Netdata:
+   Open a terminal and start Netdata:
 
-    `docker run -d --name=netdata -p 19999:19999 netdata/netdata`
+   `docker run -d --name=netdata -p 19999:19999 netdata/netdata`
 
-       - -d runs in detached mode.
+      - -d runs in detached mode.
 
-       - --name=netdata sets the container name.
+      - --name=netdata sets the container name.
 
-       - -p 19999:19999 exposes the dashboard.
+      - -p 19999:19999 exposes the dashboard.
 
-### 2. Access Netdata Dashboard
+2. Access Netdata Dashboard
 
-    Open your browser and go to:
+   Open your browser and go to:
 
-    [http://localhost:19999](http://localhost:19999)
+   [http://localhost:19999](http://localhost:19999)
 
-       - For remote servers: replace localhost with your server’s IP.
+      - For remote servers: replace localhost with your server’s IP.
 
-### 3. Monitor Metrics
+3. Monitor Metrics
 
     - Explore real-time CPU, RAM, disk, and network statistics.
 
@@ -39,20 +43,22 @@ This project provides simple, step-by-step instructions for monitoring your syst
 
     - For further details on alerts, check the Alerts panel in the dashboard.
 
-### 4. View Logs (If Needed)
+4. View Logs (If Needed)
 
-    If running Netdata in Docker, view logs using:
+   If running Netdata in Docker, view logs using:
 
-    `docker logs netdata`
+   `docker logs netdata`
 
-       - To access detailed logs, you need to map /var/log/netdata from the container to your host
+      - To access detailed logs, you need to map /var/log/netdata from the container to your host
 
-### 5. Stop & Remove Netdata Container
+5. Stop & Remove Netdata Container
 
-    To stop and remove:
+   To stop and remove:
 
-    `docker stop netdata`
-    `docker rm netdata`
+   `docker stop netdata`
+   `docker rm netdata`
+
+   ---
 
 ## Purpose of docker-compose.yml
 
@@ -67,6 +73,8 @@ This `docker-compose.yml` file is provided to simplify the deployment of Netdata
 ## Netdata Running Metrics screenshot
 
 ![Netdata Metrics Screenshot](metrics-screenshot.png)
+
+---
 
 ## Author
 S NAGAVEENA
